@@ -4,9 +4,6 @@
   "description": "Parses Markdown into an abstract syntax tree. Based on github.com/chjj/marked.",
   "author": "Patrick Dubroy <pdubroy@gmail.com> (http://dubroy.com)",
   "license": "MIT",
-  "dependencies": {
-    "underscore": "^1.6.0"
-  },
   "devDependencies": {
     "browserify": "^5.9.1",
     "jshint": "^2.5.2",
