@@ -67,10 +67,9 @@ function render(node, renderer) {
 
   // Render all of the children.
   var results = Array.isArray(node) ? [] : {};
-  for (var key in node) {
-    if (node.hasOwnProperty(key))
-      results[key] = render(node[key], renderer);
-  }
+  Object.keys(node).forEach(function(key) {
+    results[key] = render(node[key], renderer);
+  });
 
   if (Array.isArray(node))
     return results.join('');
